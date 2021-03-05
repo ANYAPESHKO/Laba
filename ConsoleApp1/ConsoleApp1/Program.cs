@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,18 +9,18 @@ using System.Threading.Tasks;
 // I'm sorry, my Engish is very bad. I use GoogleTranslate
 
 //  My app include:
-//1. 7 melodies (full and not full)
+//1. 7 (by Saturday 8) melodies (full and not full) 
 //2. Free play
 //3. Listen and play my melodies
 //4. Basic notes
-  
+
 //  My app future changes:
 //1. Optimizing notes with the help of Console.ReadKey, because there are a lot of notes, but not enough keys
 //2. Error converting to short/int, if a person enters a non-number in the input string
 //3. Optimizing the function Choice
 //4. Calculation of flats and sharps
 //5. Lots of songs(it's very hard, because I select some notes and bpm by hands, for example, Shut Your Mouth)
-  
+
 //Help me, please
 
 
@@ -38,6 +38,8 @@ namespace ConsoleApp1
         static Int32 C4 = 261, D4 = 293, E4 = 329, F4 = 349, G4 = 392, A4 = 440/*, H4 = 493*/; //first octave
         static Int32 C5 = 523, D5 = 587, E5 = 659, F5 = 698, G5 = 783, A5 = 880/*, H5 = 987*/;//second octave
         static Int32 /*C6 = 1046,*/ D6 = 1174, /*E6 = 1318,*/ F6 = 1396, G6 = 1568/*, A6 = 1760, H6 = 1975*/; //third octave
+        static Int32 Ab4 = 417, Gb4 = 370, Cb5 = 497, Ab5 = 831, Eb5 = 623, Gb5 = 740;
+        static Int32 Db5 = 554, Hb4 = 466, Db4 = 277, Eb6 = 1245; 
         static void ListenJingleBells()
         {
             Console.Beep(E5, 300);
@@ -80,7 +82,7 @@ namespace ConsoleApp1
         {
             Console.Beep(E3, 600);
             Console.Beep(E3, 200);
-            Console.Beep(G3, 500);     
+            Console.Beep(G3, 500);
             Console.Beep(E3, 300);
             Console.Beep(D3, 200);
             Console.Beep(C3, 800);
@@ -118,104 +120,104 @@ namespace ConsoleApp1
                     }
 
             }
-       
+
         }
-       
+
         static void ListenGeese()
         {
-             Console.Beep(F4, 300);
-             Console.Beep(E4, 300);
-             Console.Beep(D4, 300);
-             Console.Beep(C4, 300);
-             Console.Beep(G4, 600);
-             Console.Beep(G4, 600);
-             Console.Beep(F4, 300);
-             Console.Beep(E4, 300);
-             Console.Beep(D4, 300);
-             Console.Beep(C4, 300);
-             Console.Beep(G4, 600);
-             Console.Beep(G4, 600);
-             Console.Beep(F4, 300);
-             Console.Beep(A4, 300);
-             Console.Beep(A4, 300);
-             Console.Beep(F4, 300);
-             Console.Beep(E4, 300);
-             Console.Beep(G4, 300);
-             Console.Beep(G4, 300);
-             Console.Beep(E4, 300);
-             Console.Beep(D4, 300);
-             Console.Beep(E4, 300);
-             Console.Beep(F4, 300);
-             Console.Beep(D4, 300);
-             Console.Beep(C4, 600) ;//???
-             Console.Beep(C4, 600);//??
+            Console.Beep(F4, 300);
+            Console.Beep(E4, 300);
+            Console.Beep(D4, 300);
+            Console.Beep(C4, 300);
+            Console.Beep(G4, 600);
+            Console.Beep(G4, 600);
+            Console.Beep(F4, 300);
+            Console.Beep(E4, 300);
+            Console.Beep(D4, 300);
+            Console.Beep(C4, 300);
+            Console.Beep(G4, 600);
+            Console.Beep(G4, 600);
+            Console.Beep(F4, 300);
+            Console.Beep(A4, 300);
+            Console.Beep(A4, 300);
+            Console.Beep(F4, 300);
+            Console.Beep(E4, 300);
+            Console.Beep(G4, 300);
+            Console.Beep(G4, 300);
+            Console.Beep(E4, 300);
+            Console.Beep(D4, 300);
+            Console.Beep(E4, 300);
+            Console.Beep(F4, 300);
+            Console.Beep(D4, 300);
+            Console.Beep(C4, 600);//???
+            Console.Beep(C4, 600);//??
         }
 
         static void ListenFirWasBorn()
         {
             Console.Beep(H3, 500);
-            Console.Beep(417, 500);//Ab4
-            Console.Beep(417, 500);
-            Console.Beep(370, 500);//Gb4
-            Console.Beep(417, 500);
+            Console.Beep(Ab4, 500);
+            Console.Beep(Ab4, 500);
+            Console.Beep(Gb4, 500);
+            Console.Beep(Ab4, 500);
             Console.Beep(E4, 500);
             Console.Beep(H3, 500);
             Console.Beep(H3, 500);
             Console.Beep(H3, 500);
-            Console.Beep(417, 500);
-            Console.Beep(417, 500);
-            Console.Beep(370, 500);
-            Console.Beep(417, 500);
-            Console.Beep(497, 500);//CB5
+            Console.Beep(Ab4, 500);
+            Console.Beep(Ab4, 500);
+            Console.Beep(Gb4, 500);
+            Console.Beep(Ab4, 500);
+            Console.Beep(Cb5, 500);
             System.Threading.Thread.Sleep(300);
-            Console.Beep(497, 500);
-            Console.Beep(277, 500);//DB4
-            Console.Beep(277, 500);
+            Console.Beep(Cb5, 500);
+            Console.Beep(Db4, 500);
+            Console.Beep(Db4, 500);
             Console.Beep(A4, 500);
             Console.Beep(A4, 500);
-            Console.Beep(417, 500);
-            Console.Beep(370, 500);
+            Console.Beep(Ab4, 500);
+            Console.Beep(Gb4, 500);
             Console.Beep(E4, 500);
             Console.Beep(H3, 500);
-            Console.Beep(417, 500);
-            Console.Beep(417, 500);
-            Console.Beep(370, 500);
-            Console.Beep(417, 500);
+            Console.Beep(Ab4, 500);
+            Console.Beep(Ab4, 500);
+            Console.Beep(Gb4, 500);
+            Console.Beep(Ab4, 500);
             Console.Beep(E4, 500);
         }
 
         static void ListenShutYourMouth()
         {
-              Console.Beep(C5, 500);
-              Console.Beep(G5, 250);
-              Console.Beep(C5, 250);
-              Console.Beep(831, 500);//Ab5
-              Console.Beep(G5, 250);
-              Console.Beep(F5, 250);
-              Console.Beep(G5, 500);
-              Console.Beep(F5, 250);
-              Console.Beep(G5, 250);
-              Console.Beep(831, 250);
-              Console.Beep(831, 250);
-              Console.Beep(G5, 250);
-              Console.Beep(F5, 250);
-              Console.Beep(C5, 500);
-              Console.Beep(G5, 250);
-              Console.Beep(C5, 250);
-              Console.Beep(831, 500);
-              Console.Beep(G5, 250);
-              Console.Beep(F5, 250);
-              Console.Beep(623, 250);//EB5
-              Console.Beep(F5, 250);
-              Console.Beep(623, 250);
-              Console.Beep(D5, 250);
-              Console.Beep(D5, 250);
-              System.Threading.Thread.Sleep(50);
-              Console.Beep(623, 250);//Eb5
-              System.Threading.Thread.Sleep(50);
-              Console.Beep(D5, 250);
-              System.Threading.Thread.Sleep(50);
-              Console.Beep(C5, 800);
+            Console.Beep(C5, 500);
+            Console.Beep(G5, 250);
+            Console.Beep(C5, 250);
+            Console.Beep(Ab5, 500);
+            Console.Beep(G5, 250);
+            Console.Beep(F5, 250);
+            Console.Beep(G5, 500);
+            Console.Beep(F5, 250);
+            Console.Beep(G5, 250);
+            Console.Beep(Ab5, 250);
+            Console.Beep(Ab5, 250);
+            Console.Beep(G5, 250);
+            Console.Beep(F5, 250);
+            Console.Beep(C5, 500);
+            Console.Beep(G5, 250);
+            Console.Beep(C5, 250);
+            Console.Beep(Ab5, 500);
+            Console.Beep(G5, 250);
+            Console.Beep(F5, 250);
+            Console.Beep(Eb5, 250);
+            Console.Beep(F5, 250);
+            Console.Beep(Eb5, 250);
+            Console.Beep(D5, 250);
+            Console.Beep(D5, 250);
+            System.Threading.Thread.Sleep(50);
+            Console.Beep(Eb5, 250);
+            System.Threading.Thread.Sleep(50);
+            Console.Beep(D5, 250);
+            System.Threading.Thread.Sleep(50);
+            Console.Beep(C5, 800);
         }
 
         static void ListenImperialMarch()
@@ -234,7 +236,7 @@ namespace ConsoleApp1
             Console.Beep(E5, 500);
             Console.Beep(F5, 350);
             Console.Beep(C5, 150);
-            Console.Beep(415, 500);//Ab4
+            Console.Beep(Ab4, 500);
             Console.Beep(F4, 350);
             Console.Beep(C5, 150);
             Console.Beep(A4, 1000);
@@ -242,22 +244,22 @@ namespace ConsoleApp1
             Console.Beep(A4, 350);
             Console.Beep(A4, 150);
             Console.Beep(A5, 500);
-            Console.Beep(830, 250);//Ab5
+            Console.Beep(Ab5, 250);
             Console.Beep(G5, 250);
-            Console.Beep(740, 125);//Gb5
+            Console.Beep(Gb5, 125);
             Console.Beep(F5, 125);
-            Console.Beep(740, 250);
+            Console.Beep(Gb5, 250);
             System.Threading.Thread.Sleep(250);
-            Console.Beep(455, 250);
-            Console.Beep(622, 500);//Eb5
+            Console.Beep(Hb4, 250);
+            Console.Beep(Eb5, 500);
             Console.Beep(D5, 250);
-            Console.Beep(554, 250);//Db5
+            Console.Beep(Db5, 250);
             Console.Beep(C5, 125);
-            Console.Beep(466, 125);//Hb4
+            Console.Beep(Hb4, 125);
             Console.Beep(C5, 250);
             System.Threading.Thread.Sleep(250);
             Console.Beep(F4, 125);
-            Console.Beep(415, 500);
+            Console.Beep(Ab4, 500);
             Console.Beep(F4, 375);
             Console.Beep(A4, 125);
             Console.Beep(C5, 500);
@@ -268,22 +270,22 @@ namespace ConsoleApp1
             Console.Beep(A4, 350);
             Console.Beep(A4, 150);
             Console.Beep(A5, 500);
-            Console.Beep(830, 250);
+            Console.Beep(Ab5, 250);
             Console.Beep(G5, 250);
-            Console.Beep(740, 125);
+            Console.Beep(Gb5, 125);
             Console.Beep(F5, 125);
-            Console.Beep(740, 250);
+            Console.Beep(Gb5, 250);
             System.Threading.Thread.Sleep(250);
-            Console.Beep(455, 250);
-            Console.Beep(622, 500);
+            Console.Beep(Hb4, 250);
+            Console.Beep(Eb5, 500);
             Console.Beep(D5, 250);
-            Console.Beep(554, 250);
+            Console.Beep(Db5, 250);
             Console.Beep(C5, 125);
-            Console.Beep(466, 125);
+            Console.Beep(Hb4, 125);
             Console.Beep(C5, 250);
             System.Threading.Thread.Sleep(250);
             Console.Beep(F4, 250);
-            Console.Beep(415, 500);
+            Console.Beep(Ab4, 500);
             Console.Beep(F4, 375);
             Console.Beep(C5, 125);
             Console.Beep(A4, 500);
@@ -298,7 +300,7 @@ namespace ConsoleApp1
             Console.Beep(G6, 200);
             Console.Beep(G6, 200);
             Console.Beep(G6, 200);
-            Console.Beep(1245, 1000);//Eb6
+            Console.Beep(Eb6,1000);
             Console.Beep(F6, 200);
             Console.Beep(F6, 200);
             Console.Beep(F6, 200);
@@ -307,7 +309,7 @@ namespace ConsoleApp1
 
         static void Main(string[] args)
         {
-            for(; ; )
+            for (; ; )
             {
                 Menu();
             }
@@ -386,15 +388,15 @@ namespace ConsoleApp1
                     }
                 default:
                     {
-                        Console.Clear(); 
-                        goto Flag; 
+                        Console.Clear();
+                        goto Flag;
                     }
             }
         }//Person listen to music
 
         static void Choice()
         {
-            Flag:
+        Flag:
             Console.WriteLine("Will you play this melody?");
             Console.WriteLine("Enter 1, if yes");
             Console.WriteLine("Enter 2, if no");
@@ -402,12 +404,12 @@ namespace ConsoleApp1
             short choice;
             str = Console.ReadLine();
             choice = Convert.ToInt16(str);
-            switch(choice)
+            switch (choice)
             {
-                case 1 :
+                case 1:
                     {
                         Console.Clear();
-                        if(ChoiceOfPeople==1)
+                        if (ChoiceOfPeople == 1)
                         {
                             TextJingleBells();
                         }
@@ -458,7 +460,7 @@ namespace ConsoleApp1
             Console.WriteLine(" ");
             Console.WriteLine("Enter ESC to exit");
             ConsoleKeyInfo keypress;
-            while(true)
+            while (true)
             {
                 keypress = Console.ReadKey();
                 if (keypress.Key == ConsoleKey.Escape)
@@ -467,9 +469,9 @@ namespace ConsoleApp1
                     Menu();
                 }
                 //first octave
-                if (keypress.Key==ConsoleKey.Q)
+                if (keypress.Key == ConsoleKey.Q)
                 {
-                    Console.Beep(C4,600);
+                    Console.Beep(C4, 600);
                 }
                 if (keypress.Key == ConsoleKey.W)
                 {
@@ -599,16 +601,22 @@ namespace ConsoleApp1
 
         static void TextJingleBells()
         {
+
+            Console.WriteLine("          NEW LINE IT'S PAUSE!!      ");
+            Console.WriteLine(" ");
             Console.WriteLine(" D       D       D   ");
             Console.WriteLine(" D       D       D   ");
             Console.WriteLine(" D       G       A       S       D     ");
-            Console.WriteLine(" Q       W       E       F       F       F       D       F       D       D");
-            Console.WriteLine(" D       S       S       D       S");
-            Console.WriteLine(" G");   
+            Console.WriteLine(" Q       W       E");
+            Console.WriteLine(" F       F       F       D       F       D       D");
+            Console.WriteLine(" D       S       S       D       S       G");
+
         }
 
         static void TextGeese()
         {
+            Console.WriteLine("          NEW LINE IT'S PAUSE!!      ");
+            Console.WriteLine(" ");
             Console.WriteLine(" R       E       W       Q       T       T");
             Console.WriteLine(" R       E       W       Q       T       T");
             Console.WriteLine(" R       Y       Y       R       E       T       T       E ");
@@ -617,7 +625,10 @@ namespace ConsoleApp1
 
         static void TextFirWasBorn()
         {
+            Console.WriteLine("               NEW LINE IT'S PAUSE!!      ");
+            Console.WriteLine(" ");
             Console.WriteLine("     Please press the numbers on the num lock!!   ");
+            Console.WriteLine(" ");
             Console.WriteLine(" J       I       I       O       J       E       J       J");
             Console.WriteLine(" J       I       I       O       P       P");
             Console.WriteLine(" P       4       4       Y       Y       I       O       E ");
@@ -626,6 +637,8 @@ namespace ConsoleApp1
 
         static void TextShutYourMouth()
         {
+            Console.WriteLine("          NEW LINE IT'S PAUSE!!      ");
+            Console.WriteLine(" ");
             Console.WriteLine(" A       G       A       K       G       F       G       F       G");
             Console.WriteLine(" K       K       G       F       A       G       A       K ");
             Console.WriteLine(" G       F       L       F       L       S       S      ");
@@ -634,7 +647,10 @@ namespace ConsoleApp1
 
         static void TextImperialMarch()
         {
+            Console.WriteLine("                  NEW LINE IT'S PAUSE!!      ");
+            Console.WriteLine(" ");
             Console.WriteLine("     Please press the numbers on the num lock!!   ");
+            Console.WriteLine(" ");
             Console.WriteLine(" Y       Y       Y       R       A       Y       R       A       Y ");
             Console.WriteLine(" D       D       D       F       A       I       R       A       Y  ");
             Console.WriteLine(" H       Y       Y       H       K       G       1   ");
@@ -643,23 +659,30 @@ namespace ConsoleApp1
             Console.WriteLine(" K       G       1       F       1       3       L       A       3       A");
             Console.WriteLine(" R       I       R       A       Y       R       Q       Y");
 
-        }  
+        }
 
-        static void TextSevenNationArmy() 
+        static void TextSevenNationArmy()
         {
+            Console.WriteLine("              NEW LINE IT'S PAUSE!!      ");
+            Console.WriteLine(" ");
             Console.WriteLine("     Please press the numbers on the num lock!!   ");
+            Console.WriteLine(" ");
             Console.WriteLine(" N       N       M       N       C       Z       U");
         }
 
         static void TextTragedy()
         {
+            Console.WriteLine("            NEW LINE IT'S PAUSE!!      ");
+            Console.WriteLine(" ");
             Console.WriteLine("     Please press the numbers on the num lock!!   ");
+            Console.WriteLine(" ");
             Console.WriteLine(" B       B       B       5");
             Console.WriteLine(" V       V       V       X");
         }
 
         static void NoteForUser()
         {
+
             Console.WriteLine("     Please press the numbers on the num lock!!   ");
             Console.WriteLine(" ");
             Console.WriteLine(" I - Ab4     O - Gb4       P - Cb5       K - Ab5     L - Eb5");
@@ -677,9 +700,7 @@ namespace ConsoleApp1
             Console.WriteLine(" Z - C6      X - D6        C - E6        V - F6      B - G6      N - A6      M - H6");
             Console.WriteLine(" ");
             Console.WriteLine(" A - C5      S - D5        D - E5        F - F5      G - G5      H - A5");
-        }
+        }   
 
     }
 }
-
-
