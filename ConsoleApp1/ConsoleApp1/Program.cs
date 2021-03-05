@@ -616,6 +616,7 @@ namespace ConsoleApp1
 
         static void TextFirWasBorn()
         {
+            Console.WriteLine("     Please press the numbers on the num lock!!   ");
             Console.WriteLine(" J       I       I       O       J       E       J       J");
             Console.WriteLine(" J       I       I       O       P       P");
             Console.WriteLine(" P       4       4       Y       Y       I       O       E ");
@@ -632,6 +633,7 @@ namespace ConsoleApp1
 
         static void TextImperialMarch()
         {
+            Console.WriteLine("     Please press the numbers on the num lock!!   ");
             Console.WriteLine(" Y       Y       Y       R       A       Y       R       A       Y ");
             Console.WriteLine(" D       D       D       F       A       I       R       A       Y  ");
             Console.WriteLine(" H       Y       Y       H       K       G       1   ");
@@ -644,17 +646,21 @@ namespace ConsoleApp1
 
         static void TextSevenNationArmy() 
         {
+            Console.WriteLine("     Please press the numbers on the num lock!!   ");
             Console.WriteLine(" N       N       M       N       C       Z       U");
         }
 
         static void TextTragedy()
         {
+            Console.WriteLine("     Please press the numbers on the num lock!!   ");
             Console.WriteLine(" B       B       B       5");
             Console.WriteLine(" V       V       V       X");
         }
 
         static void NoteForUser()
         {
+            Console.WriteLine("     Please press the numbers on the num lock!!   ");
+            Console.WriteLine(" ");
             Console.WriteLine(" I - Ab4     O - Gb4       P - Cb5       K - Ab5     L - Eb5");
             Console.WriteLine(" ");
             Console.WriteLine(" 1 - Gb5     2 - Db5       3 - Hb4       4 - Db4     5 - Eb6");
