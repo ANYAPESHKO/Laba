@@ -167,6 +167,7 @@ namespace ConsoleApp1
             Console.Beep(370, 500);
             Console.Beep(417, 500);
             Console.Beep(497, 500);//CB5
+            System.Threading.Thread.Sleep(300);
             Console.Beep(497, 500);
             Console.Beep(277, 500);//DB4
             Console.Beep(277, 500);
