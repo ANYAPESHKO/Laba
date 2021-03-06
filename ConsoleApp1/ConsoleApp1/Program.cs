@@ -1,8 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 // This app play music with help function beep (Hz, msec) 
 
@@ -39,7 +35,7 @@ namespace ConsoleApp1
         static Int32 C5 = 523, D5 = 587, E5 = 659, F5 = 698, G5 = 783, A5 = 880/*, H5 = 987*/;//second octave
         static Int32 /*C6 = 1046,*/ D6 = 1174, /*E6 = 1318,*/ F6 = 1396, G6 = 1568/*, A6 = 1760, H6 = 1975*/; //third octave
         static Int32 Ab4 = 417, Gb4 = 370, Cb5 = 497, Ab5 = 831, Eb5 = 623, Gb5 = 740;
-        static Int32 Db5 = 554, Hb4 = 466, Db4 = 277, Eb6 = 1245; 
+        static Int32 Db5 = 554, Hb4 = 466, Db4 = 277, Eb6 = 1245;
         static void ListenJingleBells()
         {
             Console.Beep(E5, 300);
@@ -91,34 +87,36 @@ namespace ConsoleApp1
 
         static void Menu()
         {
-        Flag:
-            Console.WriteLine("Enter 1 to enable free mode");// not full
-            Console.WriteLine("Enter 2 to play the finished music ");
-            Console.WriteLine("Enter 3 to exit the program ");
-            string str; int choice;
-            str = Console.ReadLine();
-            choice = Convert.ToInt32(str);
-            switch (choice)
+            while (true)
             {
-                case 1:
-                    {
-                        Console.Clear();
-                        NoteForUser();
-                        Play();
-                        Console.Clear(); break;
-                    }
-                case 2:
-                    {
-                        Console.Clear();
-                        Listen();
-                        Console.Clear(); break;
-                    }
-                case 3: Environment.Exit(0); break;//выйти из приложения
-                default:
-                    {
-                        Console.Clear(); goto Flag;
-                    }
+                Console.WriteLine("Enter 1 to enable free mode ");// not full
+                Console.WriteLine("Enter 2 to play the finished music ");
+                Console.WriteLine("Enter 3 to exit the program ");
+                string str; int choice;
+                str = Console.ReadLine();
+                choice = Convert.ToInt32(str);
+                switch (choice)
+                {
+                    case 1:
+                        {
+                            Console.Clear();
+                            NoteForUser();
+                            Play();
+                            Console.Clear(); break;
+                        }
+                    case 2:
+                        {
+                            Console.Clear();
+                            Listen();
+                            Console.Clear(); break;
+                        }
+                    case 3: Environment.Exit(0); break;
+                    default:
+                        {
+                            Console.Clear(); break;
+                        }
 
+                }
             }
 
         }
@@ -300,7 +298,7 @@ namespace ConsoleApp1
             Console.Beep(G6, 200);
             Console.Beep(G6, 200);
             Console.Beep(G6, 200);
-            Console.Beep(Eb6,1000);
+            Console.Beep(Eb6, 1000);
             Console.Beep(F6, 200);
             Console.Beep(F6, 200);
             Console.Beep(F6, 200);
@@ -396,63 +394,65 @@ namespace ConsoleApp1
 
         static void Choice()
         {
-        Flag:
-            Console.WriteLine("Will you play this melody?");
+            while (true)
+            { Console.WriteLine("Will you play this melody?");
             Console.WriteLine("Enter 1, if yes");
             Console.WriteLine("Enter 2, if no");
             string str;
             short choice;
             str = Console.ReadLine();
             choice = Convert.ToInt16(str);
-            switch (choice)
-            {
-                case 1:
-                    {
-                        Console.Clear();
-                        if (ChoiceOfPeople == 1)
+                switch (choice)
+                {
+                    case 1:
                         {
-                            TextJingleBells();
-                        }
-                        if (ChoiceOfPeople == 2)
-                        {
-                            TextSevenNationArmy();
-                        }
-                        if (ChoiceOfPeople == 3)
-                        {
-                            TextGeese();
-                        }
-                        if (ChoiceOfPeople == 4)
-                        {
-                            TextFirWasBorn();
-                        }
-                        if (ChoiceOfPeople == 5)
-                        {
-                            TextShutYourMouth();
-                        }
-                        if (ChoiceOfPeople == 6)
-                        {
-                            TextTragedy();
-                        }
-                        if (ChoiceOfPeople == 7)
-                        {
-                            TextImperialMarch();
-                        }
+                            Console.Clear();
+                            if (ChoiceOfPeople == 1)
+                            {
+                                TextJingleBells();
+                            }
+                            if (ChoiceOfPeople == 2)
+                            {
+                                TextSevenNationArmy();
+                            }
+                            if (ChoiceOfPeople == 3)
+                            {
+                                TextGeese();
+                            }
+                            if (ChoiceOfPeople == 4)
+                            {
+                                TextFirWasBorn();
+                            }
+                            if (ChoiceOfPeople == 5)
+                            {
+                                TextShutYourMouth();
+                            }
+                            if (ChoiceOfPeople == 6)
+                            {
+                                TextTragedy();
+                            }
+                            if (ChoiceOfPeople == 7)
+                            {
+                                TextImperialMarch();
+                            }
 
-                        Play();
-                        break;
-                    }
-                case 2:
-                    {
-                        Console.Clear();
-                        Menu();
-                        break;
-                    }
-                default:
-                    {
-                        Console.Clear();
-                        goto Flag;
-                    }
+                            Play();
+                            break;
+                        }
+                    case 2:
+                        {
+                            Console.Clear();
+                            Menu();
+                            break;
+                        }
+                    default:
+                        {
+                            Console.Clear();
+                            break;
+                        }
+                }
             }
+        
         }//Person desides to play or not
 
         static void Play()
@@ -643,7 +643,7 @@ namespace ConsoleApp1
             Console.WriteLine(" K       K       G       F       A       G       A       K ");
             Console.WriteLine(" G       F       L       F       L       S       S      ");
             Console.WriteLine(" L       S       A ");
-        }// change! 
+        }// change!  
 
         static void TextImperialMarch()
         {
@@ -700,7 +700,7 @@ namespace ConsoleApp1
             Console.WriteLine(" Z - C6      X - D6        C - E6        V - F6      B - G6      N - A6      M - H6");
             Console.WriteLine(" ");
             Console.WriteLine(" A - C5      S - D5        D - E5        F - F5      G - G5      H - A5");
-        }   
+        }
 
     }
 }
